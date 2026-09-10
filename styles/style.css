@@ -1,4 +1,4 @@
-root {
+:root {
     --green: #16a34a;
     --green-dark: #15803d;
     --green-light: #dcfce7;
@@ -13,4 +13,61 @@ root {
     --bg: #f8fafc;
     --font-display: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+}
+
+.menu{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    border-bottom: var(--slate-200) 1px solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    align-items: center;
+    display: flex;
+    width: 70%;
+}
+
+.iconeBike{
+    color: var(--green);
+    width: 30px;
+    height: 30px;
+}
+
+.tituloMenu{
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.tituloMenu span{
+    color: var(--green);
+}
+
+.menuLinks ul{
+    display: flex;
+    font-family: var(--font-body);
+    list-style-type: none;
+    color: var(--slate-500);
+    gap: 20px;
+}
+
+.menuLinks button{
+    background-color: var(--green);
+    color: var(--slate-100);
+    font-family: var(--font-body);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.menuItens button:hover{
+    background-color: var(--green-dark);
 }
