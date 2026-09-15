@@ -21,6 +21,8 @@ body{
     background-color: var(--bg);
 }
 
+
+/* Menu */
 .menu{
     margin: 50px;
     display: flex;
@@ -74,6 +76,8 @@ body{
 .containerLocacao{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     margin: 30px;
 }
 
@@ -86,10 +90,12 @@ body{
     color: var(--green);
     font-size: 15px;
 }
+
 .containerLocacaoTextos h1{
-    font-family: var(--font-body);
+    font-family: var(--font-display);
     font-size: 60px;
-    font-weight: 700;
+    font-weight:700;
+    margin-bottom: 3px;
 }
 
 .containerLocacaoTextos span{
@@ -106,17 +112,58 @@ body{
     background-color: var(--green);
     color: var(--slate-100);
     font-family: var(--font-body);
-    padding: 10px;
-    border-radius: 20px;
+    font-weight: 800;
+    padding: 15px;
+    border-radius: 25px;
     border: 1px;
+    margin-right: 10px;
 }
 
 .containerLocacaoTextos button:hover{
     background-color: var(--green-dark);
 }
 
+
+.containerLocacaoTextos a{
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--slate-500);
+}
+
+.avaliacoesNumeros li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.avaliacoesNumeros, .avaliacoesTextos ul{
+    color: var(--slate-500);
+    font-family: var(--font-body);
+    font-weight: 1000;
+}
+
+.estrelaAvaliacoes{
+    width: 15px;
+    height: 15px;
+}
+
+.avaliacoes{
+    gap: 35px;
+}
+
+.avaliacoesTextos li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5px;
+}
+
+/* Reservas Abertas */
+
 .imagemCiclista{
-    width: 450px;
-    height: 350px;
+    width: 550px;
+    height: 450px;
     border-radius: 30px;
 }
+
