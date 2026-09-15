@@ -172,17 +172,19 @@ body{
     border-radius: 30px;
 }
 
-.reservasTextos{
+.cardReservas{
     background-color: #ffffff;
     padding: 20px;
     border-radius: 20px;
     margin-right: 300px;
+    box-shadow: var(--slate-900);
 }
 
-.reservasTextos p{
+.cardReservas p{
     display: flex;
     align-items: center;
     font-family: var(--font-body);
+    font-weight: 800;
 }
 
 .reservasAbertas{
@@ -199,3 +201,46 @@ body{
     width: 30px;
     height: 30px;
 }
+
+/* Como Funciona */
+
+.containerComoFunciona h1{
+    font-family: var(--font-display);
+    font-weight: 800;
+    margin-left: 800px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    font-family: var(--font-body);
+    margin: 80px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: auto;
+    border-radius: 15px;
+}
+
+
+.detalheCard{
+    font-size: 80px;
+    font-family: var(--font-display);
+    color: var(--green-pale);
+    font-weight: 800;
+}
+
+.texto h4{
+    color: var(--green-dark);
+}
+
+.texto{
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+
