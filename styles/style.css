@@ -23,6 +23,11 @@ body{
 
 
 /* Menu */
+
+.menuBg{
+    background-color: var(--white);
+}
+
 .menu{
     margin-left: 100px;
     margin-right: 100px;
@@ -254,10 +259,12 @@ body{
 /* Catálogo das Bikes */
 
 .containerCatalogo{
-    background-color: var(--white);
+    margin-top: 40px;
+    margin-left: 50px;
 }
 
 .containerTitulo{
+    margin-top: 40px;
     font-family: var(--font-display);
 }
 
@@ -265,4 +272,9 @@ body{
     color: var(--green-dark);
     font-size: 12px;
     margin-top: 50px;
+}
+
+.containerTitulo p{
+    display: flex;
+    justify-content: right;
 }
