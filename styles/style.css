@@ -24,30 +24,32 @@ body{
 
 /* Menu */
 .menu{
-    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
-    border-bottom: var(--slate-200) 1px solid;
     align-items: center;
     justify-content: space-between;
+    border-bottom: var(--slate-200) 1px solid;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    width: 100px;
+    height: 100%;
+    gap: 20px;
+    padding: 10px;
 }
 
-.iconeBike{
-    stroke: var(--green);
-}
-
-.tituloMenu{
+.logo h1{
+    font-size: 30px;
     font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 25px;
 }
 
-.tituloMenu span{
+.logo h1 span{
+    color: var(--green);
+}
+
+.logoBike{
     color: var(--green);
 }
 
@@ -56,7 +58,14 @@ body{
     font-family: var(--font-body);
     list-style-type: none;
     color: var(--slate-500);
+    text-decoration: none;
     gap: 20px;
+}
+
+.menuLinks a{
+    color: var(--slate-500);
+    font-family: var(--font-body);
+    text-decoration: none;
 }
 
 .menuLinks button{
@@ -156,8 +165,7 @@ body{
     height: 15px;
 }
 
-/* Reservas Abertas */
-
+/* Reservas Abertas - imagem e card */
 .imagemCiclista{
     width: 550px;
     height: 450px;
