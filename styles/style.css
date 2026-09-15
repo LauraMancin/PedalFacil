@@ -130,33 +130,30 @@ body{
     color: var(--slate-500);
 }
 
-.avaliacoesNumeros li{
+.avaliacoesNumeros ul, .avaliacoesTextos ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 20px;
+    gap: 80px;
 }
 
-.avaliacoesNumeros, .avaliacoesTextos ul{
+.avaliacoesNumeros li, .avaliacoesTextos li{
     color: var(--slate-500);
     font-family: var(--font-body);
     font-weight: 1000;
 }
 
-.estrelaAvaliacoes{
-    width: 15px;
-    height: 15px;
+.avaliacoesNumeros{
+    margin-bottom: 30px;
 }
 
 .avaliacoes{
-    gap: 35px;
+    margin-left: 60px;
 }
 
-.avaliacoesTextos li{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 5px;
+.estrelaAvaliacoes{
+    width: 15px;
+    height: 15px;
 }
 
 /* Reservas Abertas */
@@ -167,3 +164,30 @@ body{
     border-radius: 30px;
 }
 
+.reservasTextos{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 300px;
+}
+
+.reservasTextos p{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-body);
+}
+
+.reservasAbertas{
+    font-size: 12px;
+    color: var(--slate-400);
+    margin-top: 1px;
+}
+
+.reservasBikes{
+    gap: 10px;
+}
+
+.reservasBikes img{
+    width: 30px;
+    height: 30px;
+}
