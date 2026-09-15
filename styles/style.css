@@ -87,7 +87,8 @@ body{
     grid-template-columns: repeat(2, 1fr);
     display: flex;
     justify-content: center;
-    margin: 30px;
+    background-color: var(--white);
+    
 }
 
 .containerLocacaoTextos h2{
@@ -96,6 +97,7 @@ body{
     border-radius: 10px;
     padding: 10px;  
     margin-right: 360px;
+    margin-top: 40px;
     color: var(--green);
     font-size: 15px;
 }
@@ -166,6 +168,11 @@ body{
 }
 
 /* Reservas Abertas - imagem e card */
+
+.reservas{
+    margin-top: 40px;
+}
+
 .imagemCiclista{
     width: 550px;
     height: 450px;
@@ -243,4 +250,8 @@ body{
     margin-right: 80px;
 }
 
+/* Catálogo das Bikes */
 
+.containerCatalogo{
+    background-color: var(--white);
+}
