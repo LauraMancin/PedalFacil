@@ -499,3 +499,9 @@ body{
     border-radius: 30px;
     border: none;
 }
+
+.seta{
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+}
