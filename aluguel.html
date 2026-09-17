@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Aluguel</title>
+</head>
+<body>
+    <header class="menuAluguel">
+        <a href="./index.html"><img src="./assets/Back.png" alt="Voltar">Voltar</a>
+        <h1 class="menuDecorado">PedalFácil</h1>
+    </header>
+
+
+    <section class="formularioAluguel" id="formularioAluguel">
+
+        <div class="tituloFormulario">
+            <small>formulário de reserva</small>
+
+            <div class="tituloAluguel">
+                <h1>Finalize seu aluguel</h1>
+            </div>
+        </div>
+
+        <div class="cardPreco">
+
+            <div class="cardInformacoes">
+                <img id="bikeSelecionada" src="" alt="">
+                <div class="textoInformacoes">
+                    <small id="tipoBike"></small>
+                    <h1 id="nomeBike"></h1>
+                    <p>R$<span id="precoInfo"></span>/dia</p>
+                </div>
+
+            </div>
+
+            <div class="precoInformacoes">
+                <small><span class="diasAluguel"></span></small>
+                <h1><span class="precoAluguel"></span></h1> 
+            </div>
+        </div>
+
+        <form action="">
+
+            <label class="secoesForm" for="">dados pessoais</label> 
+            <div class="dadosSecao">
+
+                <label for="">Nome Completo *</label>
+                <input type="text" name="" id="" placeholder="Ex: Maria Silva">
+
+                <label for="">Telefone *</label>
+                <input class="telefoneForm" type="tel" name="" id="" placeholder="(19) 99999-0000">
+            </div>
+
+            <label class="secoesForm" for="">endereço completo</label>
+            <div class="endereco">
+
+                <div class="logradouroGeral">
+                    <div>
+                        <label for="">CEP *</label>
+                        <input type="text" name="" id="" placeholder="00000-000">
+                    </div>
+
+                    <div>
+                        <label for="">Logradouro *</label>
+                        <input type="text" name="" id="" placeholder="Rua, Avenida, etc.">
+                    </div>
+                </div>
+
+                <div class="detalhesLogradouro">
+                    <div>
+                        <label for="">Número *</label>
+                        <input type="text" name="" id="" placeholder="123">
+                    </div>
+
+                    <div>
+                        <label for="">Bairro *</label>
+                        <input type="text" name="" id="" placeholder="Nome do Bairro">
+                    </div>
+
+                    <div>
+                        <label for="">Cidade *</label>
+                        <input type="text" name="" id="" placeholder="São Paulo">
+                    </div>
+
+                    <div>
+                        <label for="">UF *</label>
+                        <input type="text" name="" id="" placeholder="SP">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <label class="secoesForm" for="">período do empréstimo</label>
+
+            <div class="periodo">
+                <div>
+                    <label for="">Data de retirada *</label>
+                    <input type="date" name="" id="dataRetirada" placeholder="00000-000">
+                </div>
+                <div>
+                    <label for="">Horário de retirada *</label>
+                    <input type="time" name="" id="" placeholder="Rua, Avenida, etc.">
+                </div>
+                <div>
+                    <label for="">Data de devolução *</label>
+                    <input type="date" name="" id="dataDevolucao" placeholder="Rua, Avenida, etc.">
+                </div>
+            </div>
+        </form>
+
+        <div class="cardPrecoFinal">
+            <div>
+                <p><span class="diasAluguel"></span> dias x R$<span id="precoAluguel"></span></p>
+                <small>Pagamento na retirada</small>
+            </div>
+            <h1>R$ <span class="precoAluguel"></span></h1>
+        </div>
+
+        <button id="botaoConfirmar" class="botaoConfirmar" type="submit">Confirmar Reserva</button>
+    </section>
+
+    <script type="module" src="formulario.js"></script>
+    <script type="module" src="lista.js"></script>
+</body>
+</html>

@@ -407,10 +407,11 @@ body{
     height: 20px;
 }
 
-.cardBike button{
+.cardBike a{
     padding: 10px;
     width: 95%;
     align-self: center;
+    text-align: center;
     font-size: 20px;
     font-family: var(--font-display);
     color: var(--white);
@@ -420,9 +421,10 @@ body{
     margin-bottom: 20px;
     background-color: var(--green);
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
-.cardBike button:hover{
+.cardBike a:hover{
     background-color: var(--green-dark);
 }
 
@@ -437,7 +439,7 @@ body{
     cursor: no-drop;
 }
 
-.cardBike.indisponivel button{
+.cardBike.indisponivel a{
     padding: 10px;
     width: 95%;
     align-self: center;
@@ -517,8 +519,44 @@ body{
 
 /* PARTE DO ALUGUEL */
 
+.menuAluguel{
+    display: flex;
+    align-items: center;
+    gap: 800px;
+    padding: 5px;
+    background-color: var(--white);
+    margin-bottom: 50px;
+    border-bottom: var(--slate-200) 1px solid;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    z-index: 1;
+}
+
+.menuAluguel a{
+    color: var(--slate-400);
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menuDecorado{
+    color: var(--green-dark);
+    font-family: var(--font-display);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.menuAluguel img{
+    width: 20px;
+    height: 20px;
+}
+
 .formularioAluguel{
     margin: 0;
+    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -546,7 +584,7 @@ body{
     justify-content: space-between;
 }
 
-.cardPreco{
+.cardPreco, .cardPrecoFinal{
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -554,6 +592,53 @@ body{
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
+}
+
+.cardPreco, .cardPrecoFinal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--white);
+    border: var(--slate-100) 1.5px solid;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.cardPreco p, .cardPreco small, .cardPrecoFinal p, .cardPrecoFinal small{
+    font-size: 25px;
+    font-family: var(--font-display);
+    color: var(--green-dark);
+}
+
+.cardPreco h1, .cardPrecoFinal h1{
+    font-family: var(--font-display);
+    font-size: 50px;
+    color: var(--green-dark);
+}
+
+.cardPrecoFinal{
+    background-color: var(--green-pale);
+    border-color: var(--green-dark);
+}
+
+.botaoConfirmar{
+    padding: 10px;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 20px;
+    font-family: var(--font-display);
+    font-weight: 600;
+}
+
+.botaoConfirmar:hover{
+    background-color: var(--green-dark);
 }
 
 .cardInformacoes{
@@ -657,46 +742,4 @@ form input{
 .periodo{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.cardPreco{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--green-pale);
-    border: 2px solid var(--green);
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.cardPreco p, .cardPreco small{
-    font-size: 25px;
-    font-family: var(--font-display);
-    color: var(--green-dark);
-}
-
-.cardPreco h1{
-    font-family: var(--font-display);
-    font-size: 50px;
-    color: var(--green-dark);
-}
-
-.botaoConfirmar{
-    padding: 10px;
-    width: 100%;
-    align-self: center;
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 20px;
-    transition: 0.3s ease;
-    color: var(--white);
-    background-color: var(--green);
-    font-size: 20px;
-    font-family: var(--font-display);
-    font-weight: 600;
-}
-
-.botaoConfirmar:hover{
-    background-color: var(--green-dark);
 }
