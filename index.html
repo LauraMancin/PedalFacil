@@ -19,21 +19,21 @@
                         <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
                         <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5"/>
                     </svg>
-                    <h1>Pedal <span class="destaqueLogo">Fácil</span></h1>
+                    <a href="#containerLocacao"><h1>Pedal <span class="destaqueLogo">Fácil</span></h1></a>
                 </div>
 
                 <!-- Links e Botão -->
                 <div class="menuLinks">
                     <ul>
-                        <li><a href="#">Bikes</a></li>
-                        <li><a href="#">Como Funciona</a></li>
-                        <li><button>Alugar</button></li>
+                        <li><a href="#containerCatalogo">Bikes</a></li>
+                        <li><a href="#containerComoFunciona">Como Funciona</a></li>
+                        <li><a href="#containerCatalogo" class="botaoAlugar">Alugar</a></li>
                     </ul>
                 </div>
         </header>
     </section>
 
-    <section class="containerLocacao">
+    <section class="containerLocacao" id="containerLocacao">
         <div class="containerLocacaoTextos">
             <h2>LOCAÇÃO DE BICICLETAS</h2>
 
@@ -41,7 +41,10 @@
 
             <p>Alugue a bike ideal para sua aventura ou para o dia a <br> dia. Frota variada, preços acessíveis e processo <br> 100% online</p>
 
-            <button>Ver bikes disponíveis</button> <a href="#">Como funciona?</a>
+            <div class="locacaoBotoes">
+                <a href="#containerCatalogo" class="botaoLocacao">Ver bikes disponíveis</a> 
+                <a href="#containerComoFunciona">Como funciona?</a>
+            </div>
 
             <div class="avaliacoesNumeros">
                 <ul>
@@ -71,7 +74,7 @@
         </div>    
     </section>
 
-    <section class="containerComoFunciona">
+    <section class="containerComoFunciona" id="containerComoFunciona">
 
         <h1>Como Funciona</h1>
 
@@ -120,7 +123,7 @@
         </div>
     </section>
 
-    <section class="containerCatalogo">
+    <section class="containerCatalogo" id="containerCatalogo">
 
         <div class="containerTitulo">
             <h2>CATÁLOGO</h2>

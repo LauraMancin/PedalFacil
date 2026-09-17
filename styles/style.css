@@ -15,6 +15,10 @@
     --font-body: 'Inter', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -29,12 +33,15 @@ body{
 }
 
 .menu{
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    z-index: 1000;
     border-bottom: var(--slate-200) 1px solid;
+    background-color: var(--white);
 }
 
 .logo{
@@ -42,24 +49,35 @@ body{
     align-items: center;
     height: 100%;
     gap: 20px;
-    padding: 10px;
+    padding-inline: 50px;
 }
 
 .logo h1{
     font-size: 30px;
     font-family: var(--font-display);
+    color: var(--slate-900);
 }
 
 .logo h1 span{
     color: var(--green);
 }
 
+.logo a{
+    text-decoration: none;
+}
+
+
 .logoBike{
     color: var(--green);
 }
 
+.menuLinks{
+    padding-inline: 50px;
+}
+
 .menuLinks ul{
     display: flex;
+    align-items: center;
     font-family: var(--font-body);
     list-style-type: none;
     color: var(--slate-500);
@@ -73,7 +91,7 @@ body{
     text-decoration: none;
 }
 
-.menuLinks button{
+.menuLinks .botaoAlugar{
     background-color: var(--green);
     color: var(--slate-100);
     font-family: var(--font-body);
@@ -82,7 +100,7 @@ body{
     border: 1px;
 }
 
-.menuLinks button:hover{
+.menuLinks .botaoAlugar:hover{
     background-color: var(--green-dark);
 }
 
@@ -92,6 +110,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     display: flex;
     justify-content: center;
+    margin-top: 70px;
     background-color: var(--white);
     
 }
@@ -122,9 +141,10 @@ body{
     color: var(--slate-500);
     font-size: 15px;
     font-family: var(--font-body);
+    margin-bottom: 30px;
 }
 
-.containerLocacaoTextos button{
+.containerLocacaoTextos .botaoLocacao{
     background-color: var(--green);
     color: var(--slate-100);
     font-family: var(--font-body);
@@ -133,17 +153,21 @@ body{
     border-radius: 25px;
     border: 1px;
     margin-right: 10px;
+    text-decoration: none;
 }
 
-.containerLocacaoTextos button:hover{
+.containerLocacaoTextos .botaoLocacao:hover{
     background-color: var(--green-dark);
 }
-
 
 .containerLocacaoTextos a{
     font-family: var(--font-body);
     font-size: 15px;
     color: var(--slate-500);
+}
+
+.locacaoBotoes{
+    margin-bottom: 50px;
 }
 
 .avaliacoesNumeros ul, .avaliacoesTextos ul{
