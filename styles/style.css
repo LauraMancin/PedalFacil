@@ -514,3 +514,189 @@ body{
 .cardAluguel a{
     margin-right: 50px;
 }
+
+/* PARTE DO ALUGUEL */
+
+.formularioAluguel{
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tituloFormulario{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 160px;
+}
+
+.tituloFormulario small{
+    font-family: var(--font-body);
+    color: var(--green-dark);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tituloAluguel{
+    font-family: var(--font-display);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.cardPreco{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.cardInformacoes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cardInformacoes img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.textoInformacoes small{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.textoInformacoes h1{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: var(--font-display);
+}
+
+.textoInformacoes p{
+    font-size: 30px;
+    color: var(--green);
+    font-family: var(--font-display);
+    padding: 0;
+    margin: 0;
+}
+
+.precoInformacoes{
+    width: 20%;
+}
+
+.precoInformacoes small{
+    text-transform: none;
+    color: var(--slate-500);
+    font-family: var(--font-display);
+    font-size: 30px;
+}
+
+.precoInformacoes h1{
+    font-family: var(--font-display);
+    font-size: 90px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-family: var(--font-display);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+form input{
+    height: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--slate-400);
+    font-size: 20px;
+}
+
+.secoesForm{
+    text-transform: uppercase;
+    color: var(--slate-500);
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.telefoneForm{
+    width: 50%;
+}
+
+.endereco .detalhesLogradouro{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+}
+
+.endereco .detalhesLogradouro{
+    display: grid;
+    grid-template-columns: 10% 39% 39% 10%;
+}
+
+.periodo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cardPreco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--green-pale);
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.cardPreco p, .cardPreco small{
+    font-size: 25px;
+    font-family: var(--font-display);
+    color: var(--green-dark);
+}
+
+.cardPreco h1{
+    font-family: var(--font-display);
+    font-size: 50px;
+    color: var(--green-dark);
+}
+
+.botaoConfirmar{
+    padding: 10px;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 20px;
+    font-family: var(--font-display);
+    font-weight: 600;
+}
+
+.botaoConfirmar:hover{
+    background-color: var(--green-dark);
+}
