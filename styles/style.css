@@ -289,7 +289,7 @@ body{
 
 /* cards */
 .cardsBikes{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -469,10 +469,14 @@ body{
 /* card Aluguel */
 
 .cardAluguel{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     background-color: var(--green-dark);
     padding: 50px;
     border-radius: 40px;
     margin-bottom: 80px;
+    margin-right: 70px;
 }
 
 .textoCardAluguel{
@@ -486,6 +490,7 @@ body{
 
 .textoCardAluguel p{
     color: var(--slate-200);
+    font-size: 18px;
 }
 
 .cardAluguel button{
@@ -504,4 +509,8 @@ body{
     width: 15px;
     height: 15px;
     margin-left: 2px;
+}
+
+.cardAluguel a{
+    margin-right: 50px;
 }
